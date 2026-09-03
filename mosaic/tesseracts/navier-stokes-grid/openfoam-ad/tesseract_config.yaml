@@ -22,6 +22,9 @@ build_config:
             /home/dafoamuser/dafoam/OpenFOAM/OpenFOAM-AD/etc/bashrc && \
           bash -c '. /home/dafoamuser/dafoam/OpenFOAM/OpenFOAM-AD/etc/bashrc && \
                    cd /opt/openfoam-ad/src/icoFoamADR && wmake'
+    # The base image leaves /home/dafoamuser at 0750, so the unprivileged
+    # runtime user cannot traverse it to source the OpenFOAM-AD bashrc.
+    - RUN chmod o+x /home/dafoamuser
 
 metadata:
   mosaic:
