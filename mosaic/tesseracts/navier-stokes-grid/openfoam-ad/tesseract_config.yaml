@@ -1,7 +1,7 @@
 name: openfoam_ad_navier_stokes_grid
 version: "0.1.0"
 description: >
-  OpenFOAM icoFoam built against DAFoam's OpenFOAM-AD (OpenFOAM v2506). 
+  OpenFOAM icoFoam built against DAFoam's OpenFOAM-AD (OpenFOAM v2506).
   The whole PISO time loop is taped, so the VJP is the exact discrete
   adjoint of the final velocity field with respect to the initial condition. Periodic mode only.
 build_config:

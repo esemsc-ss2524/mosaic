@@ -4,8 +4,8 @@
 """OpenFOAM-AD tesseract: icoFoam with a reverse-mode discrete adjoint.
 
 Runs icoFoamADR, a PISO transient laminar solver built against DAFoam's
-OpenFOAM-AD (OpenFOAM v2506). The whole time loop is taped, so the VJP 
-is the exact discrete adjoint of the final velocity field with respect 
+OpenFOAM-AD (OpenFOAM v2506). The whole time loop is taped, so the VJP
+is the exact discrete adjoint of the final velocity field with respect
 to the initial condition.
 
 Periodic mode only: N*N (2-D) or N*N*N (3-D) Cartesian grid with cyclic

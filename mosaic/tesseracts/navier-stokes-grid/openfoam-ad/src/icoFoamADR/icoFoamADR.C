@@ -151,7 +151,7 @@ int main(int argc, char *argv[])
 
     // Usually fvc::ddtCorr is used, but we pin the coeff to 1
     // because fvc::ddtCorr applies fvcDdtPhiCoeff, whose limiter
-    // makes the discrete map non-smooth along random directions. 
+    // makes the discrete map non-smooth along random directions.
     // Pinning the coefficient to 1 makes the map smooth
     // Caveat: forward field is 4.4% off (L2) from stock icoFoam
     // BUT the two gradients converge under grid refinement

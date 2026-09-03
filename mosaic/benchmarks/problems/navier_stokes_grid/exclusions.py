@@ -70,7 +70,7 @@ OPENFOAM_AD_NO_OBSTACLE = Exclusion(
 )
 OPENFOAM_AD_TAPE_MEMORY = Exclusion(
     ExclusionCategory.INFEASIBLE,
-    "the CoDiPack tape covers the whole time loop, using 6.7 GB at N=16/320 steps"
+    "the CoDiPack tape covers the whole time loop, using 6.7 GB at N=16/320 steps, "
     "making higher N/steps infeasible; needs step-wise re-taping with checkpointing",
 )
 XLB_MA_FLOOR = Exclusion(
